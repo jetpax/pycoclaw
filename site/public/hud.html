@@ -78,6 +78,25 @@ body{
   padding:16px 20px;
   align-self:center;
   margin:0 10px;
+  padding-bottom: 40px;
+}
+
+.bot-name{
+  font-size:18px;
+  letter-spacing:6px;
+  color:var(--accent-cool);
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:0 0 12px rgba(80,208,240,.4);
+  margin-bottom:18px;
+}
+
+.bot-dob{
+  font-size:9px;
+  letter-spacing:2px;
+  color:#3a5868;
+  text-align:center;
+  margin-top:10px;
 }
 
 .panel-section-label{
@@ -610,6 +629,12 @@ function createCenterPanel(container) {
   const panel = document.createElement('div');
   panel.className = 'center-panel';
 
+  // ── BOT NAME ──
+  const botName = document.createElement('div');
+  botName.className = 'bot-name';
+  botName.textContent = 'PFC';
+  panel.appendChild(botName);
+
   // ── PROVIDERS ──
   const provLabel = document.createElement('div');
   provLabel.className = 'panel-section-label';
@@ -741,6 +766,12 @@ function createCenterPanel(container) {
     statusEls.err.textContent = errs;
     statusEls.err.className = `status-ring ${errs > 0 ? 's-warn' : 's-ok'}`;
   }, 4000);
+
+  // ── DoB ──
+  const dob = document.createElement('div');
+  dob.className = 'bot-dob';
+  dob.textContent = 'BORN 2025.01.15';
+  panel.appendChild(dob);
 }
 
 /* ── BUILD THE DASHBOARD ───────────────── */
@@ -758,7 +789,7 @@ const brain = createGauge(dash, {
 createCenterPanel(dash);
 
 const mem = createGauge(dash, {
-  min: 0, max: 8, majorStep: 2, minorStep: 0.5, initial: 1.5,
+  min: 0, max: 8, majorStep: 1, minorStep: 0.2, initial: 1.5,
   header: 'RAM', label: 'MEMORY', sublabel: 'MB',
   fillColor: '#40d0f0',
   accentColor: '#c86040',
@@ -802,7 +833,7 @@ function smoothStep(current, target, speed) {
 setInterval(() => {
   targets.brain = 5 + Math.random() * 30;
   targets.mem = 1 + Math.random() * 6;
-  targets.resp = 50 + Math.random() * 500;
+  targets.resp = 50 + Math.random() * 400;
   targets.temp = 33.5 + Math.random() * 7;
 }, 3000);
 
