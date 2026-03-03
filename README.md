@@ -49,10 +49,8 @@ Built on MicroPython, it supports:
 
 ## Related Projects
 
-- [PFC](https://github.com/jetpax/PFC) — AI agent orchestrator extension
 - [Scripto Studio](https://github.com/jetpax/scripto-studio) — Web-based IDE
 - [ScriptoHub](https://github.com/jetpax/scriptohub) — Extension marketplace
-- [pyDirect](https://github.com/jetpax/pyDirect) — MicroPython firmware
 - [WebREPL](https://github.com/jetpax/webrepl) — Protocol specifications
 - [USRobotIQ](https://usrobotiq.com) — Consumer products
 
