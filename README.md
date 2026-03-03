@@ -10,7 +10,9 @@
 
 ## What is PycoClaw?
 
-PycoClaw is an open-source platform for running AI agents on ESP32 microcontrollers. It brings [OpenClaw](https://github.com/openclaw/openclaw)-compatible intelligence to embedded devices costing under $5.
+PycoClaw is an open-source platform for running AI agents on microcontrollers. 
+
+It brings [OpenClaw](https://github.com/openclaw/openclaw) workspace-compatible intelligence to embedded devices costing under $5.
 
 Built on MicroPython, it supports:
 
@@ -48,12 +50,13 @@ Built on MicroPython, it supports:
 | Platform | Chip | Status |
 |----------|------|--------|
 | ESP32-S3 | Xtensa LX7 | ✅ Production |
+| ESP32-P4 | RISC-V | 🚧 Coming Soon |
 | RP2350 | ARM Cortex-M33 | 🚧 Coming Soon |
 
 ## Related Projects
 
-- [Scripto Studio](https://github.com/jetpax/scripto-studio) — Web-based IDE
-- [ScriptoHub](https://github.com/jetpax/scriptohub) — Extension marketplace
+- [ScriptoHub](https://github.com/jetpax/scriptohub) — Skills & Extension marketplace
+- [Scripto Studio](https://github.com/jetpax/scripto-studio) — Web-based IDE + Device Manager
 - [WebREPL](https://github.com/jetpax/webrepl) — Protocol specifications
 - [USRobotIQ](https://usrobotiq.com) — Consumer products
 
