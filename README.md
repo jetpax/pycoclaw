@@ -53,6 +53,12 @@ Built on MicroPython, it supports:
 | ESP32-P4 | RISC-V | ✅ Production |
 | RP2350 | ARM Cortex-M33 | 🚧 Coming Soon |
 
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jetpax/pycoclaw&type=date&legend=top-left)](https://www.star-history.com/#jetpax/pycoclaw&type=date&legend=top-left)
+
+
 ## Related Projects
 
 - [ScriptoHub](https://scriptohub.ai) — Skills & Extension marketplace
